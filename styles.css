@@ -1,0 +1,157 @@
+/* Estilo del body */
+body {
+    margin: 0;
+    background-image: url('img/fondo-white.png'); /* Fondo claro por defecto */
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    color: #34495e;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-image: url('img/fondo-black.png'); /* Fondo negro */
+    color: #ffffff; /* Color del texto blanco */
+}
+
+/* Estilo del botón de modo oscuro */
+#darkModeToggle {
+    position: absolute; /* Cambio a posición absoluta */
+    top: 80px; /* Lo pone justo debajo del header */
+    right: 30px; /* Distancia desde la derecha */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente blanco */
+    border-radius: 50%; /* Bordes redondeados para hacer un círculo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave para la visibilidad */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#darkModeToggle.show {
+    opacity: 1; /* Hace visible el botón */
+}
+
+/* Estilo de la imagen en el botón */
+#darkModeToggle img {
+    width: 30px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Cambio de icono según el modo */
+body.dark-mode #darkModeIcon {
+    content: url('img/sol.png'); /* Cambia el icono a sol en modo oscuro */
+}
+
+/* Estilo del botón de volver arriba */
+#scrollToTop {
+    position: fixed; /* Fijo en la ventana */
+    bottom: 30px; /* Distancia desde la parte inferior */
+    right: 30px; /* Distancia desde la derecha */
+    display: none; /* Inicialmente oculto */
+    border: none; /* Sin borde */
+    background: transparent; /* Sin fondo para que solo se vea la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    z-index: 100; /* Asegura que esté por encima del contenido */
+}
+
+#scrollToTop img {
+    width: 100px; /* Ajusta el tamaño de la imagen al 20% */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave */
+}
+
+#scrollToTop:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el mouse */
+}
+
+/* Estilo del contenedor de carga */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: black; /* Color de fondo negro inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Aseguramos que esté por encima del resto */
+    transition: background-color 1s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo del GIF de carga */
+#loading-gif {
+    position: absolute;
+    width: 600px; /* Tamaño del GIF de carga */
+    opacity: 1;
+    transition: opacity 1s ease; /* Transición de desvanecimiento */
+    z-index: 20;
+}
+
+/* Logo detrás del GIF */
+#logo {
+    position: absolute;
+    width: 600px; /* Tamaño del logo */
+    opacity: 0; /* Comienza oculto */
+    transition: opacity 1s ease; /* Transición suave para la opacidad */
+    z-index: 10;
+}
+
+/* Estilo de las cartas de películas */
+.card {
+    opacity: 0; /* Comienza oculto */
+    transform: translateY(20px); /* Desplazamiento inicial */
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease; /* Animación suave */
+    box-shadow: 
+        0 1px 2px rgba(0, 0, 0, 0.2), /* Sombra suave arriba */
+        0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra más notable abajo */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia en modo claro */
+}
+
+/* Las cartas en modo oscuro */
+.card.dark-mode {
+    background-color: rgba(120, 120, 120, 0.9); /* Fondo gris con algo de transparencia en modo oscuro */
+}
+
+/* Animación de las cartas */
+.card.show {
+    opacity: 1; /* Hace visible la carta */
+    transform: translateY(0); /* Restaura la posición */
+}
+
+/* Efectos de hover en las cartas (modo claro) */
+.card:hover {
+    transform: scale(1.04); /* Aumenta ligeramente el tamaño */
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.3), /* Sombra suave arriba */
+        0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada abajo */
+    background-color: rgba(200, 200, 200, 0.9); /* Cambia el color de fondo a un gris más oscuro en modo claro */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Efectos de hover en las cartas (modo oscuro) */
+body.dark-mode .card:hover {
+    transform: scale(1.04); /* Aumenta ligeramente el tamaño */
+    box-shadow: 
+        0 2px 4px rgba(255, 255, 255, 0.3), /* Sombra suave blanca arriba */
+        0 8px 16px rgba(255, 255, 255, 0.6); /* Sombra más pronunciada blanca abajo */
+    background-color: rgba(150, 150, 150, 0.9); /* Cambia el color de fondo a un gris más claro en modo oscuro */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Sombra en el header */
+header {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave y escalonada */
+    z-index: 10; /* Asegúrate de que esté por encima del contenido */
+}
+
+/* Estilo del contenido oculto */
+.hidden {
+    display: none; /* Oculta el contenido principal inicialmente */
+}
