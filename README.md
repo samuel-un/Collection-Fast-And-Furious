@@ -38,10 +38,10 @@
 
 ### Screenshots
 
-![screenshot1]()
-![screenshot2]()
-![screenshot3]()
-![screenshot3]()
+![screenshot1](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio1.png)
+![screenshot2](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio2.png)
+![screenshot3](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home1.png)
+![screenshot3](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home2-dark.png)
 
 ---
 
