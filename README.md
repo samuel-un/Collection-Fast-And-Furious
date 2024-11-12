@@ -1,6 +1,6 @@
 # Fast and Furious Movie Gallery
 
-[Web Preview]()
+[Web Preview](https://samuel-un.github.io/cartelera/index.html)
 
 ### Description
 
@@ -15,6 +15,7 @@
 -   [Screenshots](#screenshots)
 -   [Technologies](#technologies)
 -   [Methodology](#methodology)
+-   [Usage](#usage)
 -   [Next Steps](#next-steps)
 -   [License](#license)
 
@@ -62,13 +63,27 @@ This project is developed with a hands-on approach, using the following steps:
 
 ---
 
+### Usage
+
+To clone and use this project:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/samuel-un/cartelera.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd cartelera
+   ```
+3. **Open `index.html` in your browser**.
+
+---
+
 ### Next Steps
 
 1. **Expand Functionality**: Add more features such as advanced filters, movie ratings, and links to official trailers.
 2. **Improve the Design**: Refine the visual design with more details and visual effects like smooth transitions.
-
 3. **Implement Database**: A database could be integrated to store movie information, making it easier to manage and update the data.
-
 4. **Deploy in Production**: Deploy the project in a production environment to make it accessible online.
 
 ---
