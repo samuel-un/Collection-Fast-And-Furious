@@ -1,6 +1,6 @@
 # Fast and Furious Movie Gallery
 
-[Web Preview](https://samuel-un.github.io/cartelera/index.html)
+[Web Preview](https://samuel-un.github.io/Collection-Fast-And-Furious/)
 
 ### Description
 
