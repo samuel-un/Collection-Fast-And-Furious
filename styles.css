@@ -1,0 +1,124 @@
+/* Estilo del body y modo oscuro */
+body {
+    margin: 0;
+    background-image: url('img/fondo-white.png');
+    font-family: Arial, sans-serif;
+    color: #34495e;
+    transition: background 0.5s, color 0.5s;
+}
+body.dark-mode {
+    background-image: url('img/fondo-black.png');
+    color: #fff;
+}
+
+/* Botón de modo oscuro */
+#darkModeToggle {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+#darkModeToggle.show {
+    opacity: 1;
+}
+#darkModeToggle img {
+    width: 30px;
+}
+body.dark-mode #darkModeIcon {
+    content: url('img/sol.png');
+}
+
+/* Botón de volver arriba */
+#scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+#scrollToTop img {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#scrollToTop:hover {
+    opacity: 0.6;
+}
+
+/* Contenedor de carga */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background 1s;
+}
+#loading-gif, #logo {
+    position: absolute;
+    width: 600px;
+    transition: opacity 1s;
+}
+#loading-gif {
+    opacity: 1;
+    z-index: 20;
+}
+#logo {
+    opacity: 0;
+    z-index: 10;
+}
+
+/* Cartas */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s, box-shadow 0.3s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.9);
+}
+.card.dark-mode {
+    background: rgba(120, 120, 120, 0.9);
+}
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.6);
+    background: rgba(200, 200, 200, 0.9);
+    transition: background 0.3s;
+}
+body.dark-mode .card:hover {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3), 0 8px 16px rgba(255, 255, 255, 0.6);
+    background: rgba(150, 150, 150, 0.9);
+}
+
+/* Sombra del header */
+header {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Contenido oculto */
+.hidden {
+    display: none;
+}
