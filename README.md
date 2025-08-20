@@ -1,93 +1,83 @@
-# Fast and Furious Movie Gallery
+# 🎬 Fast and Furious Movie Gallery
 
-[Web Preview](https://samuel-un.github.io/Collection-Fast-And-Furious/)
-
-### Description
-
-**Fast and Furious Movie Gallery** is a project that displays information about all the movies in the _Fast and Furious_ saga. Users can explore details about each movie, including titles, synopses, and release dates. This project is developed as part of an individual task to practice HTML, CSS, JavaScript, and some Bootstrap.
+Explore the entire **Fast and Furious saga** with this interactive movie gallery.  
+Built with **HTML, CSS, JavaScript, and Bootstrap**, this project displays all films in the franchise with key details.
 
 ---
 
-### Index
+## 🚀 Live Demo
 
--   [Owner](#owner)
--   [Features](#features)
--   [Screenshots](#screenshots)
--   [Technologies](#technologies)
--   [Methodology](#methodology)
--   [Usage](#usage)
--   [Next Steps](#next-steps)
--   [License](#license)
+**GitHub Pages:** [https://samuel-un.github.io/Collection-Fast-And-Furious/](https://samuel-un.github.io/Collection-Fast-And-Furious/)
 
 ---
 
-### Owner
+## ✨ Features
 
--   Samuel Utrilla Núñez https://github.com/samuel-un
-
----
-
-### Features
-
--   Display all _Fast and Furious_ movies.
--   Detailed information for each movie (title, synopsis, release year, etc.).
--   Filter sorted by release year.
--   Responsive design for mobile devices.
--   Dynamic and attractive visual style using CSS and Bootstrap.
+- 📖 Display all _Fast and Furious_ movies.  
+- 📝 Detailed information for each film (title, synopsis, release year, etc.).  
+- 🔎 Filter and sort movies by release year.  
+- 📱 Responsive design for mobile and desktop.  
+- 🎨 Dynamic and attractive visual style with CSS and Bootstrap.  
 
 ---
 
-### Screenshots
+## 📸 Screenshots
 
-![screenshot1](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio1.png)
-![screenshot2](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio2.png)
-![screenshot3](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home1.png)
-![screenshot3](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home2-dark.png)
-
----
-
-### Technologies
-
--   **Frontend**: HTML5, Bootstrap, CSS3, JavaScript.
--   **Version Control**: Git and GitHub.
+![Screenshot 1](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio1.png)  
+![Screenshot 2](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-inicio2.png)  
+![Screenshot 3](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home1.png)  
+![Screenshot 4](https://github.com/samuel-un/cartelera/blob/dev/img/screenshots/cap-pantalla-home2-dark.png)  
 
 ---
 
-### Methodology
+## 🧱 Tech Stack
 
-This project is developed with a hands-on approach, using the following steps:
-
-1. **Research**: Research on _Fast and Furious_ movies is conducted, gathering data such as titles, synopses, and other key details.
-2. **Development**: The design of the page is implemented using HTML, Bootstrap, and CSS, with a focus on usability and visual aesthetics. JavaScript is used to create interactivity and dynamically load the data.
-3. **Testing and Optimization**: Tests are performed to ensure compatibility across different devices and browsers. Images and code are optimized to improve performance.
+- **Frontend**: HTML5, CSS3, Bootstrap, JavaScript (ES6).  
+- **Version Control**: Git & GitHub.  
 
 ---
 
-### Usage
+## ▶️ Usage
 
-To clone and use this project:
+To run this project locally:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/samuel-un/cartelera.git
-   ```
-2. **Navigate to the project directory**:
-   ```bash
-   cd cartelera
-   ```
-3. **Open `index.html` in your browser**.
+```bash
+# Clone the repository
+git clone https://github.com/samuel-un/Collection-Fast-And-Furious.git
 
----
+# Enter project folder
+cd Collection-Fast-And-Furious
 
-### Next Steps
+# Open index.html in your browser
+```
 
-1. **Expand Functionality**: Add more features such as advanced filters, movie ratings, and links to official trailers.
-2. **Improve the Design**: Refine the visual design with more details and visual effects like smooth transitions.
-3. **Implement Database**: A database could be integrated to store movie information, making it easier to manage and update the data.
-4. **Deploy in Production**: Deploy the project in a production environment to make it accessible online.
+No build step required.
 
 ---
 
-### License
+## 📈 Methodology
 
-This project is licensed under the MIT License.
+1. **Research** → Gathered all movies data (titles, synopses, release years).  
+2. **Development** → Structured the gallery with HTML and styled using CSS + Bootstrap. Added interactivity with JavaScript.  
+3. **Testing & Optimization** → Tested responsive design across devices, optimized code and images for performance.  
+
+---
+
+## 🚀 Next Steps
+
+- Add advanced filters (by character, rating, etc.).  
+- Implement movie ratings and user interactions.  
+- Link to official trailers.  
+- Connect to a database for dynamic content management.  
+
+---
+
+## 👤 Owner
+
+- **Samuel Utrilla Núñez** → [GitHub Profile](https://github.com/samuel-un)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
