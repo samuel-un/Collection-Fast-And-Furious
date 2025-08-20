@@ -7,7 +7,7 @@ Built with **HTML, CSS, JavaScript, and Bootstrap**, this project displays all f
 
 ## 🚀 Live Demo
 
-**GitHub Pages:** [https://samuel-un.github.io/Collection-Fast-And-Furious/](https://samuel-un.github.io/Collection-Fast-And-Furious/)
+**GitHub Pages:** [🌐 Web Preview](https://samuel-un.github.io/Collection-Fast-And-Furious/)
 
 ---
 
